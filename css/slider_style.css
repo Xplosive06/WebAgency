@@ -11,7 +11,7 @@
 .mySlides {
   display: none;
 }
-
+/* Full width for the slider's images */
 .mySlides img{
   width: 100%;
 }
@@ -31,6 +31,7 @@
   background-color: rgba(0,0,0,0.2);
 }
 
+/* Position the "prev button" to the right */
 .prev {
   left: -25px;
 }
