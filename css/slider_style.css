@@ -5,6 +5,7 @@
   margin: auto;
   padding-top: 80px;
   overflow: hidden;
+  border: green solid 1px;
 }
 
 /* Hide the images by default */
@@ -130,4 +131,12 @@
 .slider-text button {
   font-size: 0.9em;
 }
+}
+
+/* mobiles devices screen configuration */
+@media all and (max-device-width: 480px)
+{
+  .slideshow-container{
+    padding-top: 50px;
+  }
 }
