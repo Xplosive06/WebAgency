@@ -367,12 +367,10 @@ iframe {
 	header a{
 	font-size: 0.6em;
 	padding: 5px 5px 5px 5px;
-	border: 1px solid red;
 }
 
 	header img{
 		width: 30%;
-		border: blue solid 1px;
 	}
 
 	.portfolio-list{
