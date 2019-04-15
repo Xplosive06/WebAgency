@@ -29,6 +29,7 @@ h2{
 }
 
 p{
+	overflow: hidden;
 	line-height: 1.6;
 }
 
@@ -249,7 +250,6 @@ header a:hover{
 /* grey filter with text */
 .filter{
 	opacity: 0;
-	height: 60px;
 	width: 95%;
 	color: white;
 	display: flex;
@@ -346,6 +346,10 @@ iframe {
 	height: 150px;
 }
 
+p {
+	
+}
+
 /* Small size screen between Desktop and mobiles */
 @media screen and (max-width: 1024px)
 {
@@ -359,6 +363,10 @@ iframe {
 	.center-text{
 		width: 80%;
 	}
+
+	.list a {
+		width: 40%;
+	}
 }
 
 /* mobiles devices screen configuration */
@@ -369,15 +377,36 @@ iframe {
 	padding: 5px 5px 5px 5px;
 }
 
-	header img{
-		width: 30%;
-	}
-
 	.portfolio-list{
 		flex-direction: row;
 	}
 
-	.list img{
-		width: 80px;
+	.services-block{
+		flex-direction: column;
+	}
+
+	.service-banner {
+		width: 100%;
+		padding: 0px;
+		text-align: justify;
+	}
+
+	.our-projects nav {
+		font-size: 0.7em;
+	}
+
+	.list a {
+		width: 100%;
+	}
+
+	.filter {
+		display: inline;
+		font-size: 0.7em;
+	}
+
+	.form-class{
+		height: auto;
+		width: auto;
+		padding-right: 20px;
 	}
 }
