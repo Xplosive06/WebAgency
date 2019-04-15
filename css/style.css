@@ -329,10 +329,3 @@ iframe {
 	}
 }
 
-
-/* Sur les téléviseurs */
-@media tv
-
-/* Sur tous types d'écrans orientés verticalement */
-@media all and (orientation: portrait)
-
