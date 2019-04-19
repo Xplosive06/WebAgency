@@ -60,6 +60,13 @@ header a:hover{
 	border-top: 4px solid #3491b2;
 }
 
+.topnav .icon {
+	display: none;
+	border-top: none;
+	margin-top: -10px;
+	font-size: 1.2em;
+}
+
 /* Bloc-page */
 .bloc-page{
 	display: flex;
@@ -152,7 +159,7 @@ header a:hover{
 }
 
 /* our-projects's navbar */
-.our-projects nav {
+.navbar-project {
 	font-size: 1em;
 	margin-top: 2em;
 	background-color: rgb(237,241,243);
@@ -373,9 +380,9 @@ p {
 @media all and (max-device-width: 480px)
 {
 	header a{
-	font-size: 0.6em;
-	padding: 5px 5px 5px 5px;
-}
+		font-size: 0.6em;
+		padding: 5px 5px 5px 5px;
+	}
 
 	.portfolio-list{
 		flex-direction: row;
@@ -410,3 +417,24 @@ p {
 		padding-right: 20px;
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.topnav a {display: none;}
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.topnav.responsive {position: relative;}
+	.topnav.responsive .icon {
+
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}

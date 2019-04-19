@@ -10,180 +10,185 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<title>WebAgency: l'agence de tous vos projets web</title>
 </head>
 <body>
 	<div class="bloc-page">
-		<header><img src="images/logo-agence.png" alt="logo de l'agence"> <nav>
-			<a href="#">Accueil</a>
-			<a href="#services">Services</a>
-			<a href="#projets">Portfolio</a>
-			<a href="#contacts">Contact</a>
-		</nav></header>
-		<!-- Slideshow container -->
-		<section class="slideshow-container">
-
-			<!-- Full-width images with number and caption text -->
-			<div class="mySlides fade">
-				<img src="images/slider/bg1.jpg" alt="jeune fille souriante avec ses mains pleines de peinture">
-			</div>
-
-			<div class="mySlides fade">
-				<img src="images/slider/bg2.jpg" alt="jeune garçon hurlant dans un mégaphone">
+		<header><img src="images/logo-agence.png" alt="logo de l'agence"> <nav class="topnav" id="myTopnav">
+			<a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
+				<i class="fa fa-bars"></i></a>
+				<a href="#">Accueil</a>
+				<a href="#services">Services</a>
+				<a href="#projets">Portfolio</a>
+				<a href="#contacts">Contact</a>
 				
-			</div>
-			<article class="slider-text">
-				<h1><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS <br/>VOS PROJETS</h1>
-				<p>Vous avez un projet Web ? La WebAgency vous aide à le réaliser !</p>
-				<button>Plus d'infos</button>
-			</article>
-			<!-- Next and previous buttons -->
-			<a class="prev" onclick="plusSlides(-1)"><div class="prev-text">&#10094;</div></a>
-			<a class="next" onclick="plusSlides(1)"><div class="next-text">&#10095;</div></a>
-		</section>
-		<section class="our-services" id="services">
-			<article class="title-point">
-				<h2>NOS SERVICES</h2>
-				<i class="fas fa-circle"></i>
-				<p class="center-text">
-					La WebAgency vous accompagne de A à Z, de l'étude de votre projet, jusqu'à sa conception,<br> en passant par un design sur-mesure (UX/UI) et une optimisation marketing grâce à notre équipe d'experts.<br>
-				</p>
-			</article>
-			<article class="services-block">
-				<img class="mac-image" src="images/mac.png" alt="écran d'ordinateur vu de face">
-				<aside class="services-3-blocks">
-					<div class="service-banner">
-						<div>
-							<i class="fas fa-chart-line"></i><i class="fas fa-circle"></i>
-						</div>
-						<div>
-							<h3>UX design</h3>
-							<p>L'ergonomie et la prise en main de votre site sont l'unes des composantes les plus importantes du web moderne. Saviez-vous que 7 personnes sur 10 qui expérimentent un mauvais UX ne reviendront pas? Et bien avec nous, vous n'aurez même pas besoin de vous soucier de ça. </p>
-						</div>
-					</div>
-					<div class="service-banner">
-						<div>
-							<i class="fas fa-cubes"></i><i class="fas fa-circle"></i>
-						</div>
-						<div>
-							<h3>UI design</h3>
-							<p>L'UI design, indissociable de l'UX, est pourtant un domaine d'expertise bien précis. Il représente l'identité visuelle, l'âme de votre site. Nous transposons vos envies en un design qui répondra à la fois à l'image de votre entreprise, mais aussi aux exigences de vos clients.</p>
-						</div>
-					</div>
-					<div class="service-banner">
-						<div>
-							<i class="fas fa-chart-pie"></i><i class="fas fa-circle"></i>
-						</div>
-						<div>
-							<h3>SEO</h3>
-							<p>Le SEO est l'art d'optimiser la rédaction d'un projet web et son environnement pour les moteurs de recherche. Il est de nos jours obligatoire d'assigner cette tâche à de vrais professionnels. Ça tombe bien, notre équipe est composée d'experts-passionnés.</p>
-						</div>
-					</div>
-				</aside>
-			</article>
-		</section>
-		<section class="our-projects" id="projets">
-			<article class="title-point">
-				<h2>NOS PROJETS</h2>
-				<i class="fas fa-circle">
-				</i>
-				<p class="center-text">
-					La WebAgency vous accompagne de A à Z, de l'étude de votre projet, jusqu'à sa conception,<br> en passant par un design sur-mesure (UX/UI) et une optimisation marketing grâce à notre équipe d'experts.<br>
-				</p>
-				<nav class="navbar-project">
-					<a href="#">All Works<i class="fas fa-sort-down"></i></a>
-					<a href="#">Creative<i class="fas fa-sort-down"></i></a>
-					<a href="#">Corporate<i class="fas fa-sort-down"></i></a>
-					<a href="#">Portfolio<i class="fas fa-sort-down"></i></a>
-				</nav>
-			</article>
-			<article class="portfolio-list">
-				<div class="list">
-					<a href="#"><img src="images/portfolio/01.jpg" alt="un nef avec des fausses lunettes">
-						<div class="filter">	
-							<p><strong>Make some nose</strong><br>Ma page perso</p>
-							<i class="far fa-eye"></i>
-						</div>
-					</a>
+			</nav></header>
+			<!-- Slideshow container -->
+			<section class="slideshow-container">
 
-					<a href="#"><img src="images/portfolio/02.jpg" alt="dessin lapin rose sur fond bleu">
-						<div class="filter">	
-							<p><strong>Lapin écrivain</strong><br>Un site artistique</p>
-							<i class="far fa-eye"></i>
-						</div>
-					</a>
-
-					<a href="#"> <img src="images/portfolio/03.jpg" alt="logo écrit: Pompadour">
-						<div class="filter">	
-							<p><strong>Pom Pom Padour!</strong><br>Design épuré</p>
-							<i class="far fa-eye"></i>
-						</div>
-					</a>
-
-					<a href="#"><img src="images/portfolio/04.jpg" alt="Cahier d'ingénieur">
-						<div class="filter">	
-							<p><strong>Ingénieux</strong><br>Professionnel et sobre</p>
-							<i class="far fa-eye"></i>
-						</div>
-					</a>
+				<!-- Full-width images with number and caption text -->
+				<div class="mySlides fade">
+					<img src="images/slider/bg1.jpg" alt="jeune fille souriante avec ses mains pleines de peinture">
 				</div>
-				<div class="list">
-					<a href="#"><img src="images/portfolio/05.jpg" alt=" Sacs de shopping">
-						<div class="filter">	
-							<p><strong>Shopping</strong><br>E-Vitrine</p>
-							<i class="far fa-eye"></i>
-						</div>
-					</a>
 
-					<a href="#"><img src="images/portfolio/06.jpg" alt="Batîments de différents pays">
-						<div class="filter">	
-							<p><strong>MyBlog</strong><br>Partagez!</p>
-							<i class="far fa-eye"></i>
-						</div>
-					</a>
-
-					<a href="#"><img src="images/portfolio/07.jpg" alt="Logo d'un objet volant">
-						<div class="filter">	
-							<p><strong>Ça plane pour moi</strong><br>Envolez-vous!</p>
-							<i class="far fa-eye"></i>
-						</div>
-					</a>
-					<a href="#"><img src="images/portfolio/08.jpg" alt="Bureau avec fournitures organisées">
-						<div class="filter">	
-							<p><strong>Organisation</strong><br>C'est carré</p>
-							<i class="far fa-eye"></i>
-						</div>
-					</a>
+				<div class="mySlides fade">
+					<img src="images/slider/bg2.jpg" alt="jeune garçon hurlant dans un mégaphone">
+					
 				</div>
-			</article>
-		</section>
-		<footer class="contact" id="contacts">
-			<div class="blue-foreground"></div>
-			<iframe src="https://www.google.com/maps/embed/v1/search?q=25%20Rue%20d'Hauteville%2C%20Paris%2C%20France&key=AIzaSyDldnxY-knRn9UQtebQDOb9OUotYvXjL-Y"></iframe>
-			<form class="form-class" method="post" action="index.html">
-				<h3>Contact Info</h3>
-				<p><strong>WebAgency SAS</strong><br>
-					25 Rue d'Hauteville 75010 Paris<br>
-					<em>Tel :</em><span> 01 02 03 04 05</span>
-				</p>
-				<p>
-					<label for="name"></label><input type="text" name="name" placeholder=" Name" id="name">
-				</p>
-				<p>
-					<label for="email"></label><input type="email" name="email" placeholder=" Email" id="email">
-				</p>
-				<p>
-					<label for="subject"></label><input type="text" name="subject" placeholder=" Subject" id="subject">
-				</p>
-				<p>
-					<label for="email"></label><textarea placeholder=" Message"></textarea>
-				</p>
-				<p>
-					<input type="submit" name="sending-button" value="Send Message" id="submit">
-				</p>
-			</form>
-		</footer>
-	</div>
-	<script src="js/script.js"></script>
-</body>
-</html>
+				<article class="slider-text">
+					<h1><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS <br/>VOS PROJETS</h1>
+					<p>Vous avez un projet Web ? La WebAgency vous aide à le réaliser !</p>
+					<button>Plus d'infos</button>
+				</article>
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)"><div class="prev-text">&#10094;</div></a>
+				<a class="next" onclick="plusSlides(1)"><div class="next-text">&#10095;</div></a>
+			</section>
+			<section class="our-services" id="services">
+				<article class="title-point">
+					<h2>NOS SERVICES</h2>
+					<i class="fas fa-circle"></i>
+					<p class="center-text">
+						La WebAgency vous accompagne de A à Z, de l'étude de votre projet, jusqu'à sa conception,<br> en passant par un design sur-mesure (UX/UI) et une optimisation marketing grâce à notre équipe d'experts.<br>
+					</p>
+				</article>
+				<article class="services-block">
+					<img class="mac-image" src="images/mac.png" alt="écran d'ordinateur vu de face">
+					<aside class="services-3-blocks">
+						<div class="service-banner">
+							<div>
+								<i class="fas fa-chart-line"></i><i class="fas fa-circle"></i>
+							</div>
+							<div>
+								<h3>UX design</h3>
+								<p>L'ergonomie et la prise en main de votre site sont l'unes des composantes les plus importantes du web moderne. Saviez-vous que 7 personnes sur 10 qui expérimentent un mauvais UX ne reviendront pas? Et bien avec nous, vous n'aurez même pas besoin de vous soucier de ça. </p>
+							</div>
+						</div>
+						<div class="service-banner">
+							<div>
+								<i class="fas fa-cubes"></i><i class="fas fa-circle"></i>
+							</div>
+							<div>
+								<h3>UI design</h3>
+								<p>L'UI design, indissociable de l'UX, est pourtant un domaine d'expertise bien précis. Il représente l'identité visuelle, l'âme de votre site. Nous transposons vos envies en un design qui répondra à la fois à l'image de votre entreprise, mais aussi aux exigences de vos clients.</p>
+							</div>
+						</div>
+						<div class="service-banner">
+							<div>
+								<i class="fas fa-chart-pie"></i><i class="fas fa-circle"></i>
+							</div>
+							<div>
+								<h3>SEO</h3>
+								<p>Le SEO est l'art d'optimiser la rédaction d'un projet web et son environnement pour les moteurs de recherche. Il est de nos jours obligatoire d'assigner cette tâche à de vrais professionnels. Ça tombe bien, notre équipe est composée d'experts-passionnés.</p>
+							</div>
+						</div>
+					</aside>
+				</article>
+			</section>
+			<section class="our-projects" id="projets">
+				<article class="title-point">
+					<h2>NOS PROJETS</h2>
+					<i class="fas fa-circle">
+					</i>
+					<p class="center-text" id="redirecting">
+						La WebAgency vous accompagne de A à Z, de l'étude de votre projet, jusqu'à sa conception,<br> en passant par un design sur-mesure (UX/UI) et une optimisation marketing grâce à notre équipe d'experts.<br>
+					</p>
+					<nav class="navbar-project" >
+						<a href="#redirecting" autofocus>All Works<i class="fas fa-sort-down"></i></a>
+						<a href="#redirecting">Creative<i class="fas fa-sort-down"></i></a>
+						<a href="#redirecting">Corporate<i class="fas fa-sort-down"></i></a>
+						<a href="#redirecting">Portfolio<i class="fas fa-sort-down"></i></a>
+					</nav>
+				</article>
+				<article class="portfolio-list">
+					<div class="list">
+						<a href="#redirecting"><img src="images/portfolio/01.jpg" alt="un nef avec des fausses lunettes">
+							<div class="filter">	
+								<p><strong>Make some nose</strong><br>Ma page perso</p>
+								<i class="far fa-eye"></i>
+							</div>
+						</a>
+
+						<a href="#redirecting"><img src="images/portfolio/02.jpg" alt="dessin lapin rose sur fond bleu">
+							<div class="filter">	
+								<p><strong>Lapin écrivain</strong><br>Un site artistique</p>
+								<i class="far fa-eye"></i>
+							</div>
+						</a>
+
+						<a href="#redirecting"> <img src="images/portfolio/03.jpg" alt="logo écrit: Pompadour">
+							<div class="filter">	
+								<p><strong>Pom Pom Padour!</strong><br>Design épuré</p>
+								<i class="far fa-eye"></i>
+							</div>
+						</a>
+
+						<a href="#redirecting"><img src="images/portfolio/04.jpg" alt="Cahier d'ingénieur">
+							<div class="filter">	
+								<p><strong>Ingénieux</strong><br>Professionnel et sobre</p>
+								<i class="far fa-eye"></i>
+							</div>
+						</a>
+					</div>
+					<div class="list">
+						<a href="#redirecting"><img src="images/portfolio/05.jpg" alt=" Sacs de shopping">
+							<div class="filter">	
+								<p><strong>Shopping</strong><br>E-Vitrine</p>
+								<i class="far fa-eye"></i>
+							</div>
+						</a>
+
+						<a href="#redirecting"><img src="images/portfolio/06.jpg" alt="Batîments de différents pays">
+							<div class="filter">	
+								<p><strong>MyBlog</strong><br>Partagez!</p>
+								<i class="far fa-eye"></i>
+							</div>
+						</a>
+
+						<a href="#redirecting"><img src="images/portfolio/07.jpg" alt="Logo d'un objet volant">
+							<div class="filter">	
+								<p><strong>Ça plane pour moi</strong><br>Envolez-vous!</p>
+								<i class="far fa-eye"></i>
+							</div>
+						</a>
+						<a href="#redirecting"><img src="images/portfolio/08.jpg" alt="Bureau avec fournitures organisées">
+							<div class="filter">	
+								<p><strong>Organisation</strong><br>C'est carré</p>
+								<i class="far fa-eye"></i>
+							</div>
+						</a>
+					</div>
+				</article>
+			</section>
+			<footer class="contact" id="contacts">
+				<div class="blue-foreground"></div>
+				<iframe src="https://www.google.com/maps/embed/v1/search?q=25%20Rue%20d'Hauteville%2C%20Paris%2C%20France&key=AIzaSyDldnxY-knRn9UQtebQDOb9OUotYvXjL-Y"></iframe>
+				<form class="form-class" method="post" action="index.html">
+					<h3>Contact Info</h3>
+					<p><strong>WebAgency SAS</strong><br>
+						25 Rue d'Hauteville 75010 Paris<br>
+						<em>Tel :</em><span> 01 02 03 04 05</span>
+					</p>
+					<p>
+						<label for="name"></label><input type="text" name="name" placeholder=" Name" id="name">
+					</p>
+					<p>
+						<label for="email"></label><input type="email" name="email" placeholder=" Email" id="email">
+					</p>
+					<p>
+						<label for="subject"></label><input type="text" name="subject" placeholder=" Subject" id="subject">
+					</p>
+					<p>
+						<label for="email"></label><textarea placeholder=" Message"></textarea>
+					</p>
+					<p>
+						<input type="submit" name="sending-button" value="Send Message" id="submit">
+					</p>
+				</form>
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+	</html>
