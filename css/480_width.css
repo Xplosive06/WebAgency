@@ -1,0 +1,55 @@
+/* mobiles devices screen configuration */
+
+
+header a{
+	font-size: 0.6em;
+	padding: 5px 5px 5px 5px;
+}
+
+.portfolio-list{
+	flex-direction: row;
+}
+
+.services-block{
+	flex-direction: column;
+}
+
+.service-banner {
+	width: 100%;
+	padding: 0px;
+	text-align: justify;
+}
+
+.our-projects nav {
+	font-size: 0.7em;
+}
+
+.list a {
+	width: 100%;
+}
+
+.filter {
+	display: inline;
+	font-size: 0.7em;
+}
+
+.form-class{
+	height: auto;
+	width: auto;
+	padding-right: 20px;
+}
+
+.slideshow-container{
+	padding-top: 80px;
+}
+
+.slider-text button {
+	padding: 5px 10px 5px 10px;
+}
+.slider-text h1 {
+	font-size: 0.9em;
+}
+.slider-text {
+	font-size: 0.6em;
+	line-height: 10px;
+}
