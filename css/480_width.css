@@ -53,3 +53,7 @@ header a{
 	font-size: 0.6em;
 	line-height: 10px;
 }
+
+.invisible-on-smartphone {
+	display: none;
+}

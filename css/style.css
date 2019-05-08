@@ -71,7 +71,6 @@ header a:hover{
 .bloc-page{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 
 /* center the introductions text (our-services; our-projects) */ 
@@ -172,6 +171,11 @@ header a:hover{
 .our-projects {
 	padding-bottom: 3em;
 	background-color: rgba(237,241,243,0.3);
+	width: 100%;
+}
+
+.our-services {
+	width: 100%;
 }
 
 
@@ -249,7 +253,7 @@ header a:hover{
 	padding-bottom: 0;
 }
 
-.list a:hover  .filter{
+.list a:hover .filter{
 	opacity: 1;
 }
 
@@ -352,3 +356,4 @@ iframe {
 .form-class textarea{
 	height: 150px;
 }
+
