@@ -253,6 +253,13 @@ header a:hover{
 	padding-bottom: 0;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   /* IE10+ CSS */
+   .list a{
+   	margin: 15px;
+   }
+}
+
 .list a:hover .filter{
 	opacity: 1;
 }
