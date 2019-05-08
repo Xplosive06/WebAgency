@@ -258,6 +258,14 @@ header a:hover{
    .list a{
    	margin: 15px;
    }
+
+   .list {
+   	height: 100%;
+   }
+
+   .our-projects {
+   	height: 100%;
+   }
 }
 
 .list a:hover .filter{
