@@ -7,6 +7,10 @@ header a{
 	font-size: 1em;
 }
 
+header img{
+	width: 30%;
+}
+
 .center-text{
 	width: 80%;
 }
@@ -15,29 +19,47 @@ header a{
 	width: 40%;
 }
 
-.topnav a {display: none;}
-.topnav a.icon {
+/* Activés lors du redimenssionnement de la page */
+
+
+.topnav ul.icon {
 	float: right;
-	display: block;
+	display: block; /* Passe de none à block */
 }
 
 .topnav.responsive {position: relative;}
 .topnav.responsive .icon {
-
+	margin-top: 20%;
 	right: 0;
 	top: 0;
 }
-.topnav.responsive a {
+.topnav.responsive ul {
 	float: none;
 	display: block;
 	text-align: left;
 }
 
+.topnav.responsive li {
+	display: flex;
+	flex-direction: column;
+}
 
+.topnav .icon {
+	display: block;
+	text-align: center;
+	padding: 3%;
+}
+
+.topnav ul{
+	display: none;
+}
+
+.slideshow-container {
+  padding-top: 46px;
+}
 
 .slider-text {
 	color: #f2f2f2;
-	font-size: 15px;
 	padding: 10px 10px 10px 10px;
 	text-align: left;
 	margin-left: 30px;

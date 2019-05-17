@@ -3,7 +3,7 @@
   width: 100%;
   position: relative;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 69px;
   overflow: hidden;
 }
 
@@ -19,7 +19,7 @@
 /* Next & previous buttons */
 .prev, .next {
   position: absolute;
-  top: 55%;
+  top: 50%;
   width: 25px;
   padding: 14px;
   color: white;

@@ -1,6 +1,16 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
+/*Change les classes grace à la fonction onClick*/
+function navbarFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -11,6 +21,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+/*Toujours fonction onClick qui modifie ici slideIndex et donc l'index de l'image à display ou pas*/
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -30,11 +41,4 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
-function navbarFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+

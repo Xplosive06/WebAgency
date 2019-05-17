@@ -1,6 +1,10 @@
+*:focus {
+    outline: none;
+}
+
 /* Change the anchor's speed */
 html {
-	scroll-behavior: smooth;
+	scroll-behavior: smooth; /* Rend la vitesse de scroll plus fluide pour les ancres */
 }
 
 /* Using the Roboto font family displayed in the html head */
@@ -39,32 +43,41 @@ header{
 	justify-content: space-around;
 	align-items: center;
 	border-bottom: 4px solid #3491b2;
-	position: fixed;
+	position: fixed; /* Permet de garder la navbar fixer en haut de page */
 	width: 100%;
-	z-index: 10;
+	z-index: 10; /* Index supérieur aux autres éléments */
 	background-color: white;
-	padding: 10px 0px;
+}
+
+header ul{
+	margin: 0;
+	color: #181818;
+	padding-bottom: 3px;
+	padding: 20px;
+	
+}
+
+header ul:hover {
+	border-top: 4px solid #3491b2;
 }
 
 header a{
 	font-size: 1.3em;
-	color: #181818;
-	padding-bottom: 3px;
-	text-decoration: none;
-	padding: 22px 20px 20px 20px;
 	color: #525354;
+	text-decoration: none;
 }
 
 header a:hover{
 	color: black;
-	border-top: 4px solid #3491b2;
 }
 
 .topnav .icon {
-	display: none;
-	border-top: none;
-	margin-top: -10px;
-	font-size: 1.2em;
+	display: none; /* Icone hamburger cachée de base, puis modifier par script.js */
+	border-top: none; /* Suppression de la bordure bleue en top */
+}
+
+.nav-list {
+	display: flex;
 }
 
 /* Bloc-page */
@@ -87,9 +100,6 @@ header a:hover{
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
 	margin-top: 3em;
 	margin-bottom: 3em;
 }
@@ -157,16 +167,6 @@ header a:hover{
 	margin-top: 40px;
 }
 
-/* our-projects's navbar */
-.navbar-project {
-	font-size: 1em;
-	margin-top: 2em;
-	background-color: rgb(237,241,243);
-	padding: 10px 0 10px 0;
-	border-radius: 5px;
-	font-weight: bold;
-}
-
 /* our-projects's grey background */
 .our-projects {
 	padding-bottom: 3em;
@@ -178,49 +178,60 @@ header a:hover{
 	width: 100%;
 }
 
+/* our-projects's navbar */
+.navbar-project {
+	font-size: 1em;
+	margin-top: 2em;
+	padding: 10px 0 10px 0;
+	border-radius: 5px;
+	font-weight: bold;
+}
 
-/* 4 links our-projects */
-.title-point a{
+
+/* 4 links navbar */
+.navbar-project button{
 	position: relative;
 	text-decoration: none;
 	font-size: 1em;
 	padding: 10px 15px 10px 15px;
 	margin: 0;
 	color: rgb(100,104,109);
+	float: left;
+	border: none;
 }
 
-.title-point a:hover {
+.navbar-project button:hover, .navbar-project button:focus {
 	background: rgb(92,173,211);
 	border-bottom: solid 4px rgb(70,140,173);
 	color: white;
 }
 
 /* Round corners first link */
-.title-point a:first-child{
+.navbar-project button:first-child{
 	border-radius: 5px 0 0 5px;
 }
 
 /* Round corners last link */
-.title-point a:last-child{
+.navbar-project button:last-child{
 	border-radius: 0 5px 5px 0;
 }
 
 /* link's arrow */
 
-.title-point a:hover i{
+.navbar-project button:hover i, .navbar-project button:focus i, .navbar-project button:active i{
 	opacity: 1;
 }
 
-.title-point nav i {
+.navbar-project i {
 	font-size: 2.0em;
 	color: rgb(70,140,173);
 	opacity: 0;
 	position: absolute;
 	top: 23px;
-	right: 36px;
+	right: 40%;
 }
 
-/* protfolio 's block configuration */
+/* portfolio 's block configuration */
 .portfolio-list{
 	width: 100%;
 	margin-top: 3em;
@@ -251,21 +262,6 @@ header a:hover{
 	margin: 15px;
 	width: 20%;
 	padding-bottom: 0;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-   /* IE10+ CSS */
-   .list a{
-   	margin: 15px;
-   }
-
-   .list {
-   	height: 100%;
-   }
-
-   .our-projects {
-   	height: 100%;
-   }
 }
 
 .list a:hover .filter{
@@ -372,3 +368,14 @@ iframe {
 	height: 150px;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   /* IE10+ CSS */
+
+   .list {
+   	height: 100%;
+   }
+
+   .our-projects {
+   	height: 100%;
+   }
+}

@@ -6,6 +6,10 @@ header a{
 	padding: 5px 5px 5px 5px;
 }
 
+header img{
+	width: 50% !important;
+}
+
 .portfolio-list{
 	flex-direction: row;
 }
@@ -16,7 +20,6 @@ header a{
 
 .service-banner {
 	width: 100%;
-	padding: 0px;
 	text-align: justify;
 }
 
@@ -25,11 +28,10 @@ header a{
 }
 
 .list a {
-	width: 100%;
+	width: 100% !important;
 }
 
 .filter {
-	display: inline;
 	font-size: 0.7em;
 }
 
@@ -40,20 +42,22 @@ header a{
 }
 
 .slideshow-container{
-	padding-top: 80px;
+	padding-top: 45px;
 }
 
 .slider-text button {
 	padding: 5px 10px 5px 10px;
 }
-.slider-text h1 {
-	font-size: 0.9em;
-}
+
 .slider-text {
 	font-size: 0.6em;
-	line-height: 10px;
+	line-height: 15px;
 }
 
-.invisible-on-smartphone {
-	display: none;
+.map-and-foreground iframe {
+	position: relative;
+}
+
+.form-class {
+	position: relative;
 }
