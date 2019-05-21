@@ -2,10 +2,6 @@
     outline: none;
 }
 
-/* Change the anchor's speed */
-html {
-	scroll-behavior: smooth; /* Rend la vitesse de scroll plus fluide pour les ancres */
-}
 
 /* Using the Roboto font family displayed in the html head */
 body{
