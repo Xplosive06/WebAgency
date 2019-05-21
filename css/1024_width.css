@@ -28,18 +28,14 @@ header img{
 }
 
 .topnav.responsive {position: relative;}
-.topnav.responsive .icon {
-	margin-top: 20%;
-	right: 0;
-	top: 0;
-}
+
 .topnav.responsive ul:not(:first-child) {
 	float: none;
 	display: block;
 	text-align: left;
 }
 
-.topnav.responsive ol {
+.topnav.responsive li {
 	display: flex;
 	flex-direction: column;
 }
