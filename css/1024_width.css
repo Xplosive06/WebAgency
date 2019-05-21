@@ -39,7 +39,7 @@ header img{
 	text-align: left;
 }
 
-.topnav.responsive li {
+.topnav.responsive ol {
 	display: flex;
 	flex-direction: column;
 }
