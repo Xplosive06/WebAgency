@@ -45,7 +45,7 @@ header{
 	background-color: white;
 }
 
-header ul{
+header ul:not(:first-child){
 	margin: 0;
 	color: #181818;
 	padding-bottom: 3px;
@@ -53,7 +53,7 @@ header ul{
 	
 }
 
-header ul:hover {
+header ul:hover:not(:first-child) {
 	border-top: 4px solid #3491b2;
 }
 

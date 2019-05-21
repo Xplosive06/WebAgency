@@ -33,7 +33,7 @@ header img{
 	right: 0;
 	top: 0;
 }
-.topnav.responsive ul {
+.topnav.responsive ul:not(:first-child) {
 	float: none;
 	display: block;
 	text-align: left;
@@ -50,7 +50,7 @@ header img{
 	padding: 3%;
 }
 
-.topnav ul{
+.topnav ul:not(:first-child){
 	display: none;
 }
 
