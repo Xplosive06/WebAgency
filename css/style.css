@@ -45,15 +45,14 @@ header{
 	background-color: white;
 }
 
-header ul:not(:first-child){
+header li:not(:first-child){
 	margin: 0;
 	color: #181818;
-	padding-bottom: 3px;
 	padding: 20px;
 	
 }
 
-header ul:hover:not(:first-child) {
+header li:hover:not(:first-child) {
 	border-top: 4px solid #3491b2;
 }
 
@@ -73,7 +72,9 @@ header a:hover{
 }
 
 .nav-list {
+	margin: 0;
 	display: flex;
+	list-style-type: none;
 }
 
 /* Bloc-page */

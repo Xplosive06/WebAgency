@@ -22,20 +22,20 @@ header img{
 /* Activés lors du redimenssionnement de la page */
 
 
-.topnav ul.icon {
+.topnav li.icon {
 	float: right;
 	display: block; /* Passe de none à block */
 }
 
 .topnav.responsive {position: relative;}
 
-.topnav.responsive ul:not(:first-child) {
+.topnav.responsive li:not(:first-child) {
 	float: none;
 	display: block;
 	text-align: left;
 }
 
-.topnav.responsive li {
+.topnav.responsive ul {
 	display: flex;
 	flex-direction: column;
 }
@@ -46,7 +46,7 @@ header img{
 	padding: 3%;
 }
 
-.topnav ul:not(:first-child){
+.topnav li:not(:first-child){
 	display: none;
 }
 
